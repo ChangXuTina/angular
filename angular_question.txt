@@ -1,0 +1,15 @@
+1. What are the differences between JIT and AOT? And examples.
+- JIT stands for Just In Time. JIT complier provides compilation during the execution of the program at run time. Code get compiles when it's needed, not at the build time.
+- AOT stands for Ahead of Time. AOT complier provides compilation during the build time before browser downloads and runs that code.
+- differences:
+    - JIT complies code excatly before displaying in the browser, while AOT complies code while building application
+    - Loading AOT is quicker than JIT because it already has complied code at build time.
+    - Bundle size of JIT is higher than AOT
+    - Implementing features and debugging is easy in JIT mode since we can catch template binding error at display time.
+
+2. What is single page application?
+- An SPA (Single-page application) is a web app implementation that loads only a single web document, 
+- and then updates the body of content of that single document via JavaScript APIs and Fetch when differe content is to be shown.
+
+3. What are the differences between Directives and Pipes.
+- Pipes are for formatting data, while directives are to alter the behavior/appearance of an element.
