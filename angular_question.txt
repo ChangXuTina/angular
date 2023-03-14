@@ -13,3 +13,10 @@
 
 3. What are the differences between Directives and Pipes.
 - Pipes are for formatting data, while directives are to alter the behavior/appearance of an element.
+
+4. Observables vs Promise
+- Observables emit multiple values over a period of time, while promises emit a single value at a time.
+- Observables are lazy, they are not executed until we subscribe to them using subscribe() method; promises are not lazy, they are executed immidiately after creation
+- Observables have subscribtion that are cancellable using the unsubscribe() method, which stops the listener from receiving further values; promises are not cancellable
+- Observables provide the map for forEach, filter, reduce, retry and retryWhen operators; promises don't provide any operations
+- Observables deliver errors to the subscriber; promises push error to child promises
